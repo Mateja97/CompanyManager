@@ -54,6 +54,7 @@ func (cm *CompanyManager) Init(port, dbHost, dbPort, dbName, dbUsr, dbPw string,
 }
 
 func (cm *CompanyManager) Run() {
+	log.Println("[INFO] Company manager has started succesfully")
 	if err := cm.server.ListenAndServe(); err != nil && err != http.ErrServerClosed {
 		log.Println("[ERROR] Company manager server run failed")
 	}
