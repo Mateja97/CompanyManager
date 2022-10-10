@@ -25,5 +25,3 @@ services:
       - 5111:5432
     volumes:
       - "./db:/db"
-  cm:
-    image: cm:latest
